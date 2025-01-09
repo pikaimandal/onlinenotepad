@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <meta name="description" content="A simple online notepad built to help you take notes, write essays, and more.">
+    <meta name="keywords" content="online notepad, online, text editor, notepad">
+    <meta name="author" content="Pikai Mandal">
+    <link rel="stylesheet" href="onlinenotepad.css">
+</head>
+<body>
+    <div class="container">
+        <div class="notepad">
+            <div class="notepad-header">
+                <h1>Online Notepad</h1>
+                <div class="control-group">
+                    <button id="theme-toggle">🌙 Dark Mode</button>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-group">
+                    <select id="font-size">
+                        <!-- JavaScript -->
+                    </select>
+                    <select id="encoding">
+                        <option value="UTF-8">UTF-8</option>
+                        <option value="ASCII">ASCII</option>
+                    </select>
+                    <button id="export-txt">📥 Export TXT</button>
+                    <button id="new-tab">+ New Tab</button>
+                </div>
+            </div>
+            <div class="tabs" id="tabs"></div>
+            <div class="editor-container">
+                <div class="line-numbers" id="line-numbers"></div>
+                <textarea id="notepad-content" spellcheck="false"></textarea>
+            </div>
+            <div class="status-bar">
+                <div class="stats">
+                    <span class="word-count">0 words</span>
+                    <span class="char-count">0 characters</span>
+                    <span class="line-count">1 line</span>
+                    <span class="col-count">Col: 1</span>
+                    <span class="save-status">All changes saved</span>
+                </div>
+                <span class="last-modified"></span>
+            </div>
+        </div>
+    </div>
+    <script src="onlinenotepad.js"></script>
+</body>
+</html>
